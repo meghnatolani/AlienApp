@@ -1,2 +1,0 @@
-Alien Details 
- [ CodeName = mm ,BloodColor = mm, Color5 ,No of Legs = 6 ,HomePlanet = mm]
