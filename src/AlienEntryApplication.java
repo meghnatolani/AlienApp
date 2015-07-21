@@ -4,12 +4,13 @@ public class AlienEntryApplication {
 
 	public static void main(String [] args) throws Exception
 	{
-		boolean retry = false;
+		boolean cont = true;
 		String format=new String();
 		Alien a = new Alien();
+		System.out.println("Welcome!");
 		
-		while(!retry){
-	
+		while(cont){
+			System.out.println("Please Fill the following details");
 			BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 			
 			System.out.println("Enter Alien Name ");
@@ -28,26 +29,29 @@ public class AlienEntryApplication {
             System.out.println("Enter Home Planet ");
             a.setPlanetName(br.readLine());
             
-            System.out.println("Need in text or pdf? ");
+            System.out.println("Please enter the format in which you want to save");
 			format=br.readLine();
-
-            }
-            
-            catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-            catch (NumberFormatException e){
+			
+			System.out.println("Do you want to save more?Type 'y' for yes and 'n' for no ");
+			String opt  = br.readLine();
+			if(opt.equals("n"))
+				cont = false;
+			
+            } catch (Exception e){
             	System.out.println("Oops ! A Number was asked.Start again!");
-            		retry=false;
+            	continue;
+            }		
+			
+			try{
+				AlienWritterType f = new AlienWritterType(); 
+				AlienWritter alienwritter = f.getAlienWritter(format);
+				alienwritter.saveAlienData(a);
+				}catch (NullPointerException e){
+					System.out.println("Come Again !");
+	            }		
+			
+			}
+			
 		}
-		}
-		
-		
-		AlienWritterType f = new AlienWritterType();
-		AlienWritter alienwritter = f.getAlienWritter(format);
-		alienwritter.saveAlienData(a);
-
 
 	}
-}
