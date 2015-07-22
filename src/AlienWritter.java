@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+/*Interface made for multiple format implementation */
 
 public interface AlienWritter {
 	
