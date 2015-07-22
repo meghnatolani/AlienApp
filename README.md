@@ -13,8 +13,9 @@ Download the jar files from : http://sourceforge.net/projects/itext/?source=typ_
 To use in eclipse, make a separate folder, import all the jar files into the folder.																						
 Right click and Select Build Path.																																															
 
-About the Code :						
-Part A Solution :                                                                                                             Alien.java - Get and set methods for each input variable.																																		
+About the Code :						                                                                                                  
+Part A Solution :                                                                                                     
+Alien.java - Get and set methods for each input variable.																																		
 AlienEntryApplication.java - Main method which takes input from console																											
 AlienWritter.java - Interface which is implemented by the format given as input (PDF,TXT,HTML..)														
 AlienWritterType.java - Calls which AlienWritter type needed - PDF , text file or other format															
