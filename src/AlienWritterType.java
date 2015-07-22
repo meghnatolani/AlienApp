@@ -37,7 +37,7 @@ public class AlienWritterType {
 						System.out.println("Kindly create the class. It doesn't exist."); 
 					}
 				}
-			else{
+			else	{
 				System.out.println("Format doesn't exist in the textfile."); 
 				}
 			
