@@ -1,0 +1,5 @@
+foobar 
+doc
+jpeg
+log
+html
