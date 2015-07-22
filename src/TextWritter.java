@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/* .txt file created using filewriter and bufferedWriter */
+
 public class TextWritter implements AlienWritter{
 
 	@Override
