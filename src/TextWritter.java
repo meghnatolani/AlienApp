@@ -10,7 +10,7 @@ public class TextWritter implements AlienWritter{
 	@Override
 	public int saveAlienData(Alien alien) throws IOException {
 			
-				File file = new File("Alien_text.txt");
+				File file = new File("Alientext.txt");
 				// if file doesnt exists, then create it
 				if (!file.exists()) 
 					file.createNewFile(); 
