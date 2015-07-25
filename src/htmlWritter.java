@@ -8,7 +8,7 @@ public class htmlWritter implements AlienWritter{
 	public int saveAlienData(Alien alien) {
 		try{
 			
-			File htmlFile = new File("Alien_html.html");
+			File htmlFile = new File("Alienhtml.html");
 			
 			if (!htmlFile.exists()) {
 				htmlFile.createNewFile();
