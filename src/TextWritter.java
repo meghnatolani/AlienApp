@@ -10,12 +10,12 @@ public class TextWritter implements AlienWritter{
 	@Override
 	public int saveAlienData(Alien alien) throws IOException {
 			
-				File file = new File("Alientext.txt");
+				File file_text = new File("Alientext.txt");
 				// if file doesnt exists, then create it
-				if (!file.exists()) 
-					file.createNewFile(); 
+				if (!file_text.exists()) 
+					file_text.createNewFile(); 
 	 
-				FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
+				FileWriter fw = new FileWriter(file_text.getAbsoluteFile(),true);
 				BufferedWriter bw = new BufferedWriter(fw);
 				bw.write(alien.toString());
 				bw.close();
