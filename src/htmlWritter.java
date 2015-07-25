@@ -14,7 +14,7 @@ public class htmlWritter implements AlienWritter{
 				htmlFile.createNewFile();
 			}
 			
-			FileWriter fWriter = new FileWriter(htmlFile);
+			FileWriter fWriter = new FileWriter(htmlFile.getAbsoluteFile(),true);
 			BufferedWriter bWriter = new BufferedWriter(fWriter);
 			bWriter.write(alien.toString());
 			bWriter.close();
