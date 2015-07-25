@@ -1,58 +1,67 @@
 public class Alien
 {
 
-private String alien_name;
-private String blood_color;
-private String planet_name;
-private int antenna;
-private int leg;
+	private String alien_name;
+	private String blood_color;
+	private String planet_name;
+	private int NoOfAntenna;
+	private int NoOfLeg;
 
-/* get methods */
-public String getName(){
-	return alien_name;
-}
+	/* Alien Code Name details */
+	public void setAlienName(String alien_name)
+	{
+		this.alien_name=alien_name;
+	}
+	public String getName()
+	{
+		return alien_name;
+	}
 
-public String getColor(){
-	return blood_color;
-}
+	/* Color of Alien */
+	public void setColor(String blood_color)
+	{
+		this.blood_color=blood_color;
+	}
+	public String getColor()
+	{
+		return blood_color;
+	}
 
-public String getPlanet(){
-	return planet_name;
-}
+	/* Home planet of Alien */
+	public void setPlanetName(String planet_name)
+	{
+		this.planet_name=planet_name;
+	}
+	public String getPlanet()
+	{
+		return planet_name;
+	}
 
-public Integer getAntenna(){
-	return antenna;
-}
+	/* Number of Antennas Alien has */
+	public void setAntenna(Integer NoOfAntenna)
+	{
+		this.NoOfAntenna=NoOfAntenna;
+	}
+	public Integer getNoOfAntenna()
+	{
+		return NoOfAntenna;
+	}
 
-public Integer getLeg(){
-	return leg;
-}
+	/* Number of Legs Alien has */
+	public void setLeg(Integer NoOfLeg)
+	{
+		this.NoOfLeg=NoOfLeg;
+	}
+	public Integer getNoOfLeg()
+	{
+		return NoOfLeg;
+	}
 
-/* set methods */
-public void setAlienName(String alien_name){
-	this.alien_name=alien_name;
-}
-
-public void setColor(String blood_color){
-	this.blood_color=blood_color;
-}
-
-public void setPlanetName(String planet_name){
-	this.planet_name=planet_name;
-}
-
-public void setAntenna(Integer antenna){
-	this.antenna=antenna;
-}
-
-public void setLeg(Integer leg){
-	this.leg=leg;
-}
-
-@Override
-public String toString()
-
-{		return "Alien Details \n [ CodeName = " + getName() + " ,BloodColor = " 
-	            + getColor() + " ,No of Antennas = " + getAntenna() + " ,No of Legs = " + getLeg() + " ,HomePlanet = " + getPlanet() + "]";	}
-
+	/* Output obtained in format */
+	@Override
+	public String toString()
+	{
+		return "Alien Details \n\n [ CodeName = " + getName() + " ,BloodColor = "
+	            + getColor() + " ,No of Antennas = " + getNoOfAntenna() + " ,No of Legs = " + getNoOfLeg() + " ,HomePlanet = " + getPlanet() + "]";
+	}
 }
