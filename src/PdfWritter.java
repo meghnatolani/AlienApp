@@ -13,7 +13,7 @@ public class PdfWritter implements AlienWritter{
 	public int saveAlienData(Alien alien) {
 		
 		try {
-			File file = new File("Alien_pdf.pdf");
+			File file = new File("Alienpdf.pdf");
 			if (!file.exists())
 				file.createNewFile();
 			FileOutputStream pdfFileout = new FileOutputStream(file);
