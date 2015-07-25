@@ -1,3 +1,5 @@
+/* Input from console*/
+
 import java.io.*;
 
 public class AlienEntryApplication {
@@ -37,7 +39,8 @@ public class AlienEntryApplication {
 			if(opt.equals("n"))
 				cont = false;
 
-			}catch (Exception e){
+			}catch (Exception e)
+			{
 				System.out.println("Oops ! A Number was asked.Start again!");
 				continue;	
 			}		
@@ -46,7 +49,8 @@ public class AlienEntryApplication {
 				AlienWritterType f = new AlienWritterType(); 
 				AlienWritter alienwritter = f.getAlienWritter(format);
 				alienwritter.saveAlienData(a);
-				}catch (NullPointerException e){
+			}catch (NullPointerException e)
+			{
 					System.out.println("Come Again !");
 			}		
 			
