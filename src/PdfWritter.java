@@ -1,3 +1,5 @@
+/*PDF file created using itext */
+
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -5,15 +7,13 @@ import com.itextpdf.text.pdf.PdfWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 
-/*PDF file created using itext */
-
 public class PdfWritter implements AlienWritter{
 
 	@Override
 	public int saveAlienData(Alien alien) {
 		
 		try {
-			File file = new File("Alien.pdf");
+			File file = new File("Alien_pdf.pdf");
 			if (!file.exists())
 				file.createNewFile();
 			FileOutputStream pdfFileout = new FileOutputStream(file);
