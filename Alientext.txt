@@ -1,0 +1,2 @@
+Alien Details 
+ [ CodeName = megh ,BloodColor = me ,No of Antennas = 9 ,No of Legs = 9 ,HomePlanet = jupitr]
