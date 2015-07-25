@@ -1,16 +1,16 @@
+/* .txt file created using filewriter and bufferedWriter */
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
-/* .txt file created using filewriter and bufferedWriter */
 
 public class TextWritter implements AlienWritter{
 
 	@Override
 	public int saveAlienData(Alien alien) throws IOException {
 			
-				File file = new File("filename.txt");
+				File file = new File("Alien_text.txt");
 				// if file doesnt exists, then create it
 				if (!file.exists()) 
 					file.createNewFile(); 
