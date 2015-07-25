@@ -8,13 +8,13 @@ public class htmlWritter implements AlienWritter{
 	public int saveAlienData(Alien alien) {
 		try{
 			
-			File htmlFile = new File("Alienhtml.html");
+			File file_html = new File("Alienhtml.html");
 			
-			if (!htmlFile.exists()) {
-				htmlFile.createNewFile();
+			if (!file_html.exists()) {
+				file_html.createNewFile();
 			}
 			
-			FileWriter fWriter = new FileWriter(htmlFile.getAbsoluteFile(),true);
+			FileWriter fWriter = new FileWriter(file_html.getAbsoluteFile(),true);
 			BufferedWriter bWriter = new BufferedWriter(fWriter);
 			bWriter.write(alien.toString());
 			bWriter.close();
