@@ -31,9 +31,9 @@ public class PdfWritter implements AlienWritter{
 			System.out.println("PDF created");
 			return 1;
             
-			}catch(Exception e){
+		}catch(Exception e){
 			 e.printStackTrace();
-			}
+		}
 		
 		return 0;
 	}
