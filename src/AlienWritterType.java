@@ -31,10 +31,11 @@ public class AlienWritterType {
 				AlienWritter result = (AlienWritter)newFormat.newInstance();
 				return result;
 					
-				}catch (ClassNotFoundException | InstantiationException | IllegalAccessException e)
-				{
-					System.out.println("Kindly create the class. It doesn't exist."); 
-				}
+			}catch (ClassNotFoundException | InstantiationException | IllegalAccessException e)
+			{
+				System.out.println("Kindly create the class. It doesn't exist."); 
+			
+			}
 		}
 		else{
 				System.out.println("Format doesn't exist in the textfile."); 
